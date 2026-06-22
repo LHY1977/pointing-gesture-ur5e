@@ -35,28 +35,6 @@ Install the dependencies:
 pip install mujoco mediapipe opencv-python numpy
 ```
 
-## Setup
-
-This project needs two external resources that are **not** included in the repo:
-
-1. **UR5e model** from MuJoCo Menagerie. Download it from
-   [google-deepmind/mujoco_menagerie](https://github.com/google-deepmind/mujoco_menagerie)
-   and place the `universal_robots_ur5e` folder under `mujoco_menagerie/`.
-2. **MediaPipe hand model** `hand_landmarker.task`. Download it from the
-   [MediaPipe models page](https://developers.google.com/mediapipe/solutions/vision/hand_landmarker)
-   and put it in the project root.
-
-Expected folder layout:
-
-```
-.
-├── vision_mujoco_final.py        # main program
-├── intersection.py               # ray–plane intersection (paper's core geometry)
-├── hand_landmarker.task          # MediaPipe model
-└── mujoco_menagerie/
-    └── universal_robots_ur5e/    # UR5e model
-```
-
 ## Run
 
 ```bash
